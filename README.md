@@ -14,13 +14,14 @@ This project detects **lung and colon cancer** from histopathology images using 
 - Generates visual reports (PNG) of predictions
 
 ## Installation
-```bash
+
+'''bash
 git clone https://github.com/<your-username>/lung-colon-cancer-detection.git
 pip install torch torchvision matplotlib pillow opencv-python
 
 
 
-Usage
+##Usage
 Load the trained model
 Visualize predictions and Grad-CAM overlays
 Save report:
@@ -30,6 +31,6 @@ dataset_folder = "/path/to/lung_colon_image_set"
 save_gradcam_report(dataset_folder, images_per_class=2, save_path="gradcam_report.png")
 
 
-Results
+##Results
 ~93% test accuracy
 Grad-CAM highlights cancer regions for interpretability
