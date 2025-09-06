@@ -1,9 +1,16 @@
 Lung & Colon Cancer Detection using MobileNetV2 & Grad-CAM
+
+
 🔬 Project Overview
 This project uses deep learning to detect lung and colon cancer from histopathological images. It leverages MobileNetV2 for classification and Grad-CAM to visualize regions of the image that contribute most to the model's prediction.
 The model predicts whether an image belongs to Cancer or Normal tissue, and provides visual heatmaps for interpretability.
+
+
+
 📂 Dataset
 The dataset used is Lung and Colon Cancer Histopathological Images from Kaggle.
+
+
 Structure after caching:
 lung_colon_image_set/
 ├── colon_image_sets/
@@ -13,14 +20,20 @@ lung_colon_image_set/
     ├── lung_aca/    # Cancer
     ├── lung_n/      # Normal
     └── lung_scc/    # Cancer
+
+
 Classes: colon_aca, colon_n, lung_aca, lung_n, lung_scc
 The model maps these to Cancer / Normal labels for predictions.
+
+
 🛠 Features
 MobileNetV2 for efficient classification on CPU.
 Grad-CAM visualization to highlight cancerous regions in images.
 Predicts Cancer / Normal for histopathology images.
 Generates visual reports (PNG) of predictions with Grad-CAM overlays.
 Fully CPU-compatible, no GPU required.
+
+
 ⚡ Installation
 # Clone repository
 git clone https://github.com/<your-username>/lung-colon-cancer-detection.git
